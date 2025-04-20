@@ -67,14 +67,14 @@ export default function Home() {
       <header className="bg-[#264653] text-white">
         <div className="container mx-auto flex justify-between items-center p-4">
           <div className="flex items-center space-x-4">
-            <a href="/">
+            <Link href="/">
               <Image
                 src="/png.png"
                 width={40}
                 height={40}
                 alt="Home"
               />
-            </a>
+            </Link>
             <a href="/" className="text-2xl font-bold">
               Unity Exporter
             </a>
@@ -269,30 +269,30 @@ export default function Home() {
             Facilitating global economic growth with high-quality commodities and reliable services.
           </p>
           <div className="flex justify-center gap-4 mt-2">
-            <a
+            <Link
               href="https://www.instagram.com/unity_exporter/?utm_source=ig_web_button_share_sheet"
               className="text-gray-500 hover:opacity-80"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image src="/insta.png" alt="Instagram" width={32} height={32} />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/unity-exporter-977151318/"
               className="text-gray-500 hover:opacity-80"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image src="/linkedin.png" alt="LinkedIn" width={32} height={32} />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://x.com/UnityExporter?t=_KsxWQ-Htlyv_3sMVMFKWA&s=09"
               className="text-gray-500 hover:opacity-80"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image src="/twi.jpg" alt="Twitter" width={32} height={32} />
-            </a>
+            </Link>
           </div>
         </div>
 

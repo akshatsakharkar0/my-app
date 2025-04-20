@@ -1,6 +1,7 @@
 'use client'; // if you're using Next.js App Router and need interactivity
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 const ProductsSection = () => {
   return (
@@ -28,7 +29,7 @@ const ProductsSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Product Card: Chilli */}
           <div className="p-6 bg-white/10 bg-opacity-10 backdrop-blur-md rounded-lg shadow-lg flex flex-col justify-between hover:scale-105 transition transform duration-300">
-            <img
+            <Image
               src="/chilli.jpeg"
               alt="Chilli Products"
               className="w-full h-48 object-cover rounded-md mb-4"
@@ -52,7 +53,7 @@ const ProductsSection = () => {
 
           {/* Product Card: Turmeric */}
           <div className="p-6 bg-white/10 bg-opacity-10 backdrop-blur-md rounded-lg shadow-lg flex flex-col justify-between hover:scale-105 transition transform duration-300">
-            <img
+            <Image
               src="/turmeric1.jpeg"
               alt="Turmeric Products"
               className="w-full h-48 object-cover rounded-md mb-4"
@@ -74,7 +75,7 @@ const ProductsSection = () => {
 
           {/* Product Card: Coriander */}
           <div className="p-6 bg-white/10 bg-opacity-10 backdrop-blur-md rounded-lg shadow-lg flex flex-col justify-between hover:scale-105 transition transform duration-300">
-            <img
+            <Image
               src="/Coriander_Seeds.webp"
               alt="Coriander Products"
               className="w-full h-48 object-cover rounded-md mb-4"
@@ -97,7 +98,7 @@ const ProductsSection = () => {
 
           {/* Product Card: Biomass */}
           <div className="p-6 bg-white/10 bg-opacity-10 backdrop-blur-md rounded-lg shadow-lg flex flex-col justify-between hover:scale-105 transition transform duration-300">
-            <img
+            <Image
               src="/briquette.jpeg"
               alt="Biomass Products"
               className="w-full h-48 object-cover rounded-md mb-4"
