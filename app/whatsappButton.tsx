@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import whatsappImg from '@/public/whatsapp.png'; // adjust path as per your folder
-import closeIcon from '@/public/close.svg'; // optional: or just use × directly
+//import closeIcon from '@/public/close.svg'; // optional: or just use × directly
 
 const WhatsAppButton = () => {
   const [visible, setVisible] = useState(true);
@@ -18,6 +18,8 @@ const WhatsAppButton = () => {
         target="_blank"
         rel="noopener noreferrer"
         id="whatsapp-button"
+        title="Chat with us on WhatsApp"
+        aria-label="Chat with us on WhatsApp"
         className="fixed bottom-8 right-8 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition duration-300 z-20"
       >
         <Image src={whatsappImg} alt="WhatsApp" width={64} height={64} />
