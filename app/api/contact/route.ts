@@ -37,7 +37,7 @@ export async function POST(req: Request) {
   
     return new Response(JSON.stringify({ message: 'Message sent successfully' }), { status: 200 });
   } catch (error) {
-    console.error('Failed to send message101:', error);
+    console.error('Failed to send message:', error);
   
     if (error instanceof Error) {
       return new Response(JSON.stringify({ message: 'Failed to send message', error: error.message }), { status: 500 });

@@ -29,7 +29,7 @@ const ContactSection = () => {
         alert('Message sent successfully!');
         setForm({ name: '', email: '', mobile: '', message: '' });
       } else {
-        alert('Failed to send message202. Please try again.');
+        alert('Failed to send message. Please try again.');
       }
     } catch (error) {
       console.error('Error:', error);
