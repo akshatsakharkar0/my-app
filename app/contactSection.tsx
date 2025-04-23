@@ -14,13 +14,29 @@ const ContactSection = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here (API call, email service, etc.)
-    console.log(form);
-    alert('Message sent!');
-    setForm({ name: '', email: '', mobile: '', message: '' });
+  
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+  
+      const data = await res.json();
+      if (data.message === 'Message sent successfully') {
+        alert('Message sent successfully!');
+        setForm({ name: '', email: '', mobile: '', message: '' });
+      } else {
+        alert('Failed to send message202. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Something went wrong.');
+    }
   };
+  
 
   return (
     <section id="contact" className="py-16 bg-[#f1faee]">

@@ -54,7 +54,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home - Unity Exporter</title>
+        <title>Unity Exporter</title>
+        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style>{`
           a:hover {
@@ -92,10 +93,7 @@ export default function Home() {
                 <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#f4a261] group-hover:w-full transition-all duration-300"></span>
               </a>
             ))}
-            <a href="/shop" className="relative group text-white">
-              Shop
-              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#f4a261] group-hover:w-full transition-all duration-300"></span>
-            </a>
+            
           </nav>
 
           {/* Mobile Menu Button */}
@@ -117,11 +115,6 @@ export default function Home() {
                 </a>
               </li>
             ))}
-            <li>
-              <a href="/shop" className="block hover:text-[#f4a261] transition">
-                Shop
-              </a>
-            </li>
           </ul>
         </nav>
       </header>
@@ -160,46 +153,8 @@ export default function Home() {
         <div className="container mx-auto text-center">
           <h3 className="text-4xl font-bold text-[#264653] mb-6">About Us</h3>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-10">
-            At Unity Exporter, we specialize in exporting premium spices. Our mission
-            is to connect global markets with the best quality chilli, turmeric, and
-            coriander.
+          At Unity Exporter, we specialise in exporting premium quality products. Our mission is to connect global markets with the best quality products.
           </p>
-
-          {/* Simple Info Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
-            {[
-              {
-                img: 'chilli.jpeg',
-                title: 'Premium Chilli',
-                desc: 'Experience the finest chilli sourced from the best farms, guaranteed to add flavor to any cuisine.',
-              },
-              {
-                img: 'turmeric.jpg',
-                title: 'Organic Turmeric',
-                desc: 'Our turmeric is packed with nutrients and known for its superior quality and vibrant color.',
-              },
-              {
-                img: 'briquette.jpeg',
-                title: 'Biomass Fuel',
-                desc: 'Eco-friendly biomass fuel for sustainable energy solutions, sourced from reliable partners.',
-              },
-            ].map((card, index) => (
-              <div
-                key={index}
-                className="w-full h-64 bg-white shadow-md rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 flex flex-col items-center text-center"
-              >
-                <Image
-                  src={`/${card.img}`}
-                  alt={card.title}
-                  width={100}
-                  height={100}
-                  className="rounded-full mb-4 object-cover"
-                />
-                <h4 className="text-xl font-semibold text-[#264653] mb-2">{card.title}</h4>
-                <p className="text-gray-600">{card.desc}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
       {/* Mission Section */}
