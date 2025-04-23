@@ -39,7 +39,12 @@ export async function POST(req: Request) {
   } catch (error) {
     console.error('Failed to send message101:', error);
   
-    return new Response(JSON.stringify({ message: 'Failed to send message101', error: error.message }), { status: 500 });
+    if (error instanceof Error) {
+      return new Response(JSON.stringify({ message: 'Failed to send message', error: error.message }), { status: 500 });
+    } else {
+      return new Response(JSON.stringify({ message: 'Failed to send message', error: String(error) }), { status: 500 });
+    }
+    
   }
   
 }
