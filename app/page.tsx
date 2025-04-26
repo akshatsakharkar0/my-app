@@ -56,6 +56,7 @@ export default function Home() {
       <Head>
         <title>Unity Exporter</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="DdDCf5_MoSLOerdDusQXR5uW7_jp5P7U-uJzljBfplg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Export the finest, handpicked spices globally with our trusted Unity Spices Exporter. Quality, authenticity, and timely delivery guaranteed." />
         <meta property="og:title" content="Unity Spices Exporter - Premium Global Spice Export Service" />
