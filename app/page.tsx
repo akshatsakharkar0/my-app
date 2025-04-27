@@ -57,13 +57,13 @@ export default function Home() {
     <>
       <Head>
       
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-NTDKHFWFKD"></Script>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-7QGLG6ZHFQ"></Script>
       <Script>
       {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-NTDKHFWFKD');
+            gtag('config', 'G-7QGLG6ZHFQ');
           `}
       </Script>
         <title>Unity Exporter</title>
