@@ -7,6 +7,7 @@ import gsap from 'gsap';
 import 'animate.css';
 import Link from 'next/link';
 
+
 import ContactSection from './contactSection';
 import WhatsAppButton from './whatsappButton';
 import ProductSection from './productSection';
@@ -61,15 +62,7 @@ export default function Home() {
         <meta name="description" content="Export the finest, handpicked spices globally with our trusted Unity Spices Exporter. Quality, authenticity, and timely delivery guaranteed." />
         <meta property="og:title" content="Unity Spices Exporter - Premium Global Spice Export Service" />
         <meta property="og:description" content="Discover a world of flavor with Unity Spices Exporter. We export premium quality spices worldwide with reliable service and competitive prices." />
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTDKHFWFKD"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-NTDKHFWFKD');
-        </script>
+        
         <style>{`
           a:hover {
             text-shadow: 0 0 5px rgba(244, 164, 97, 1), 0 0 10px rgba(244, 164, 97, 1);
