@@ -6,6 +6,7 @@ import Image from 'next/image';
 import gsap from 'gsap';
 import 'animate.css';
 import Link from 'next/link';
+import Script from 'next/script';
 
 
 import ContactSection from './contactSection';
@@ -55,6 +56,16 @@ export default function Home() {
   return (
     <>
       <Head>
+      
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-NTDKHFWFKD"></Script>
+      <Script>
+      {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NTDKHFWFKD');
+          `}
+      </Script>
         <title>Unity Exporter</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="google-site-verification" content="DdDCf5_MoSLOerdDusQXR5uW7_jp5P7U-uJzljBfplg" />
